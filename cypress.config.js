@@ -23,7 +23,7 @@ module.exports = defineConfig({
     supportFile: "cypress/support/e2e.js",
     setupNodeEvents,
   },
-  // 👇 Вынесено отдельно, а не внутри e2e
+
   cucumber: {
     stepDefinitions: ["cypress/support/step_definitions/**/*.{js,ts}"]
   }

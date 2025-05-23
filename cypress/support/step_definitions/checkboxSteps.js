@@ -9,15 +9,15 @@ When("I expand all checkboxes", () => {
 });
 
 When("I select the {string} checkbox", (label) => {
-  cy.get('.rct-option-expand-all').click(); // Раскрывает всё дерево чекбоксов
+  cy.get('.rct-option-expand-all').click(); 
 
-  // Ищет чекбокс по надписи без учёта регистра и с пробелами
+ 
   cy.contains('.rct-node', label).find('label').click();
 });
 
 
 Then("The selected result should contain {string}", (label) => {
-  // Функция для преобразования строки из "Word File" в "wordFile"
+ 
   function toCamelCase(str) {
     return str
       .toLowerCase()

@@ -14,7 +14,7 @@ When("I move the slider to {int}", (value) => {
       const max = Number($slider.attr('max')) || 100;
       const width = $slider[0].getBoundingClientRect().width;
 
-      // рассчитываем позицию по оси X относительно слайдера
+  
       const position = ((value - min) / (max - min)) * width;
 
       cy.wrap($slider)
