@@ -13,3 +13,11 @@
 
 ```bash
 npm install
+```
+
+* No description of how to launch tests
+* Will parallel launching implemented?
+* Use for a framework only english language
+* Is 10 scenarios implemented?
+* Create base step at least two "I open {string} page", "I click the {string} button"
+* How to launch tests with specific key word (tag)?

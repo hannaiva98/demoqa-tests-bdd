@@ -1,5 +1,5 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-
+//TODO remove locators to the constructor section in Page Object
 Given("I open the checkbox page", () => {
   cy.visit("/checkbox");
 });
@@ -9,15 +9,15 @@ When("I expand all checkboxes", () => {
 });
 
 When("I select the {string} checkbox", (label) => {
-  cy.get('.rct-option-expand-all').click(); 
+  cy.get('.rct-option-expand-all').click();
 
- 
+
   cy.contains('.rct-node', label).find('label').click();
 });
 
 
 Then("The selected result should contain {string}", (label) => {
- 
+
   function toCamelCase(str) {
     return str
       .toLowerCase()

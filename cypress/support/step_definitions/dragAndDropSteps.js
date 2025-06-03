@@ -1,6 +1,6 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
-
+//TODO remove locators to the constructor section in Page Object
 Given("I open the droppable page", () => {
   cy.visit("/droppable");
 });
